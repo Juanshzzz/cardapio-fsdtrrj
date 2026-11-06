@@ -1,0 +1,15 @@
+:root {
+  --accent: #1E293B;
+  --bg: #FFFFFF;
+  --surface: #F7F7F8;
+  --border: #E5E5E7;
+  --text: #141416;
+  --muted: #52525B;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; background: var(--bg); color: var(--text); font-family: 'DM Sans', -apple-system, sans-serif; -webkit-tap-highlight-color: transparent; }
+body { background: #FFFFFF; color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; padding-bottom: 3.5rem; overflow-x: hidden; overflow-y: auto; }
+.container { max-width: 896px; margin: 0 auto; padding: 0 1rem; }
+@media (min-width: 640px) { .container { padding: 0 1.5rem; } }
+.cat-nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0.6rem 0; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y; scrollbar-width: none; -ms-overflow-style: none; }
+.cat-nav::-webkit-scrollbar { display: none; }
